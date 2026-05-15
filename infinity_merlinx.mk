@@ -34,3 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=merlinx \
     BuildDesc="merlin-user 11 RP1A.200720.011 V12.5.4.0.RJOMIXM release-keys" \
     BuildFingerprint=Redmi/merlin/merlin:11/RP1A.200720.011/V12.5.4.0.RJOMIXM:user/release-keys
+    
+# Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue
+PERF_ANIM_OVERRIDE := true
+
