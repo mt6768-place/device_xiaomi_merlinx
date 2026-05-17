@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/merlinx
 # Inherit from mt6768-common
 $(call inherit-product, device/xiaomi/mt6768-common/mt6768.mk)
 
+# Aplicar parches locales automáticamente al configurar o compilar
+$(shell sh device/xiaomi/merlinx/apply-patches.sh)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
