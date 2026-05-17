@@ -12,17 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/merlinx/device.mk)
 
 # Inherit some common Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := "akif"
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
-TARGET_SUPPORTS_BLUR := false
-
-PRODUCT_NAME := infinity_merlinx
+PRODUCT_NAME := custom_merlinx
 PRODUCT_DEVICE := merlinx
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
